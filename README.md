@@ -16,4 +16,4 @@ Once Node and NPM are installed and if the elasticsearch engine is running you c
 `node js/retrieval.js`
 
 from the project directory. There should be a ton of prints indicating that it is working. 
-# OBS: elasticsearch posts are not synchronous so inserts need not be made in the same order they appear in the list on the web! 
+OBS: elasticsearch posts are not synchronous so inserts need not be made in the same order they appear in the list on the web! 
