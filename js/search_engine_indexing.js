@@ -100,11 +100,14 @@ function search(title) {
 		}
 	}).then(function (resp) {
 		var hits = resp.hits.hits;
+		displayData(hits);
 	}, function (err) {
 		console.trace(err.message);
 	});
     return;
 }
+
+
 
 //Test indexing
 /*index("BMW i3", 123456);

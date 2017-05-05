@@ -11,6 +11,10 @@
 
 	<script src="js/elasticsearch-js/elasticsearch.min.js"></script>
 	<script src="js/elasticsearch-js/elasticsearch.js"></script>
+	<script src="js/search_engine_indexing.js"></script>
+	<script src="js/display_data.js"></script>
+	
+	
 
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -18,7 +22,30 @@
 </head>
 
 <body>
-	<p>Hello!</p>
-	<script src="js/search_engine_indexing.js"></script>
+	<h2>Blocket Price Estimator</h2>
+	
+	<form>
+		<input type="text" placeholder="Item title"><br>
+		<input type="button" value="Search" onclick="myFunction();">
+	
+	</form>
+	
+	
+	
+	<div id="priceStats">
+		<h3>Price statistics </h3>
+	
+	</div>
+	
+	
+	<script>
+		function myFunction(){
+			var input = document.getElementsByTagName("input")[0].value;
+			search(input);
+		}
+	</script>
+	
+	
+	
 </body>
 </html>
