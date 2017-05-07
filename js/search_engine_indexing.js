@@ -110,10 +110,10 @@ function search(title) {
 
 
 //Test indexing
-/*index("BMW i3", 123456);
-index("BMW i5", 1256);
-index("Volvo XC90", 1456);
-index("Ford Focus", 13456);*/
+// index("BMW i3", 123456);
+// index("BMW i5", 1256);
+// index("Volvo XC90", 1456);
+// index("Ford Focus", 13456);
 
 //Test search
 //search('Ford');

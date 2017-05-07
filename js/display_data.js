@@ -43,7 +43,9 @@ function displayData(data){
 	var text_2 = document.createTextNode("Max price: " + max_price + " kr.");
 	para_2.appendChild(text_2);
 
-	var div = document.getElementById("priceStats");
+	var div = document.getElementById("priceStatsContent");
+	while(div.firstChild)
+		div.removeChild(div.firstChild);
 	div.appendChild(para);
 	div.appendChild(para_0);
 	div.appendChild(para_1);
