@@ -83,7 +83,8 @@ function handlefetch(error, response, body) {
      		console.log("------------------------------------------------------");
      });
 
-     var nextargs = $('a.page_nav')[6].attribs.href;
+     page_nav_len = $('a.page_nav').length
+     var nextargs = $('a.page_nav')[page_nav_len-2].attribs.href;
 
      if (nextargs !== args) {
      	console.log('moving on');
