@@ -27,10 +27,6 @@ function displayData(data){
 	console.log(data[0]);
 	console.log(data[0]._source.price);
 
-	var para = document.createElement("p");
-	var text = document.createTextNode("First hit price: " + data[0]._source.price + " kr.");
-	para.appendChild(text);
-
 	var para_0 = document.createElement("p");
 	var text_0 = document.createTextNode("Average price: " + average_price + " kr.");
 	para_0.appendChild(text_0);
@@ -46,7 +42,6 @@ function displayData(data){
 	var div = document.getElementById("priceStatsContent");
 	while(div.firstChild)
 		div.removeChild(div.firstChild);
-	div.appendChild(para);
 	div.appendChild(para_0);
 	div.appendChild(para_1);
 	div.appendChild(para_2);
