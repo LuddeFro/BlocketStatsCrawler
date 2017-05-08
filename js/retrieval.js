@@ -69,7 +69,10 @@ function handlefetch(error, response, body) {
                 p = p.replace("kr", "");
                 p = p.replace(":-", "");
                 p = p.replace(" ", "");
+                p = p.replace(" ", "");
                 p = p.replace(",", "");
+                p = p.replace(",", "");
+                p = p.replace(".", "");
                 p = p.replace(".", "");
                 pi = parseInt(p);
      			console.log(pi);
