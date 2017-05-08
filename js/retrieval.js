@@ -66,8 +66,14 @@ function handlefetch(error, response, body) {
      		//price if available
      		if ( typeof element.children[2].children[0] !== 'undefined') {
      			p = element.children[2].children[0].data;
-     			console.log(p);
-     			indexmf(t, p);
+                p = p.replace("kr", "");
+                p = p.replace(":-", "");
+                p = p.replace(" ", "");
+                p = p.replace(",", "");
+                p = p.replace(".", "");
+                pi = parseInt(p);
+     			console.log(pi);
+     			indexmf(t, pi);
      		} else {
      			console.log('no price');
      		}
