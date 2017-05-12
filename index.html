@@ -21,13 +21,13 @@
 	<![endif]-->
 </head>
 
-<body>
-	<h2>Blocket Price Estimator</h2>
+<body align="center">
+	<h1 style="font-size:45pt">Blocket Price Estimator</h1>
 	
-	<form>
-		<input type="text" placeholder="Item title"><br>
-		<input type="button" value="Search" onclick="myFunction();">
-	
+	<form id="searchForm">
+		<input type="text" id='searchText' placeholder="" style="width:350px;height:35px;font-size:18pt;" autofocus>
+		<br>
+		<button type="button" onclick="doSearch()" style="width:150px;height:30px;font-size:15pt;margin:10px">Search</button>
 	</form>
 	
 	
@@ -41,9 +41,16 @@
 	
 	
 	<script>
-		function myFunction(){
-			var input = document.getElementsByTagName("input")[0].value;
+		function doSearch(){
+			var input = document.getElementById("searchText").value;
 			search(input);
+		}
+
+		function onKeyPress(event) {
+			if ((event.which || event.keyCode)==13) {
+				doSearch();
+			}
+			return false;
 		}
 	</script>
 	

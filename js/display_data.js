@@ -50,7 +50,7 @@ function displayData(data){
 	para_0.appendChild(text_0);
 
 	var para = document.createElement("p");
-	var text = document.createTextNode("Mean price: " + mean_price + " kr.");
+	var text = document.createTextNode("Median price: " + mean_price + " kr.");
 	para.appendChild(text);
 
 
