@@ -5,9 +5,16 @@ var URL = require('url-parse');
 
 var elasticsearch = require('elasticsearch'); 
 
+/* Parameters
+ * ca 	region,   12 = Södermanland
+ * w	1 = Chosen region, 2 = Nearby regions, 3 = Whole of Sweden
+ * st	s = For sale, k = To purchase
+ * cg	Category 5040 = Ljud & Bild
+ */
+
 var url = "https://www.blocket.se"
 var ext = "/sodermanland/ljud_bild/foto_Videokameror"
-var args = "?ca=12&w=3&st=s&cg=5040&c=5042"
+var args = "?ca=12&w=1&st=s&cg=5040"
 var t
 var p
 var $
